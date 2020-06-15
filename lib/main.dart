@@ -1,3 +1,4 @@
+import 'package:chat_basic_app/screens/chat_room_screen.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
@@ -20,7 +21,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginScreen(),
+      routes: {
+        "/": (context) => LoginScreen(),
+        "/room": (context) => ChatRoomScreen()
+      },
     );
   }
 }

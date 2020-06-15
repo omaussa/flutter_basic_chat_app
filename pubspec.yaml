@@ -28,6 +28,8 @@ dependencies:
   firebase_database: ^3.1.6
   firebase_messaging: ^6.0.16
   firebase_analytics: ^5.0.15
+  google_sign_in: ^4.5.1
+  shared_preferences: ^0.5.7+3
 
 
   # The following adds the Cupertino Icons font to your application.
